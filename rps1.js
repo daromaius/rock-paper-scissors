@@ -16,22 +16,26 @@ function getComputerChoice(computerChoice) {
 
 getComputerChoice(computerChoice);
 
-// function playRound(playerSelection, computerSelection) {
-//     if (playerSelection === computerSelection) {
-//         return "Uh oh! It's a tie!";
-//     } else if (playerSelection = "Rock" && computerSelection = "Scissors") {
-//         return "You win this round!";
-//     } else if (playerSelection = "Rock" && computerSelection = "Paper") {
-//         return "Better luck next time!";
-//     } else if (playerSelection = "Paper" && computerSelection = "Scissors") {
-//         return "Better luck next time!";
-//     } else if (playerSelection = "Paper" && computerSelection = "Rock") {
-//         return "You win this round!";
-//     } else if (playerSelection = "Scissors" && computerSelection = "Rock") {
-//         return "Better luck next time!";
-//     } else if (playerSelection = "Scissors" && computerSelection = "Paper") {
-//         return "You win this round!";
-//     } else {
-//         return "You broke something AGAIN!";
-//     }
-// }
+let playerChoice = prompt("Please make your selection: Rock, Paper, or Scissors?");
+
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
+        return "Uh oh! It's a tie!";
+    } else if (playerSelection == "Rock" && computerSelection == "Scissors") {
+        return "You win this round!";
+    } else if (playerSelection == "Rock" && computerSelection == "Paper") {
+        return "Better luck next time!";
+    } else if (playerSelection == "Paper" && computerSelection == "Scissors") {
+        return "Better luck next time!";
+    } else if (playerSelection == "Paper" && computerSelection == "Rock") {
+        return "You win this round!";
+    } else if (playerSelection == "Scissors" && computerSelection == "Rock") {
+        return "Better luck next time!";
+    } else if (playerSelection == "Scissors" && computerSelection == "Paper") {
+        return "You win this round!";
+    } else {
+        return "You broke something AGAIN!";
+    }
+}
+
+playRound(playerChoice, getComputerChoice(computerChoice));
