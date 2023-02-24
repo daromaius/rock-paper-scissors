@@ -38,4 +38,13 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-playRound(playerChoice, getComputerChoice(computerChoice));
+function game() {
+    for (let i = 0; i < 5; i++) {
+    
+        playRound(playerChoice, getComputerChoice(computerChoice));
+        console.log(playRound());
+
+    }
+}
+
+game();
